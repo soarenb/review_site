@@ -1,0 +1,19 @@
+<h1>Review form for </h1>
+
+<%= form_for [@user, @review] do |f| %>
+
+  <%=f.label :rating, "Rating" %>
+  <%=f.text_field :rating %>
+
+  <%=f.label :title, "Title" %>
+  <%=f.text_field :title %>
+
+  <%=f.label :body, "Review" %>
+  <%=f.text_field :body %>
+
+  <%=f.submit "Add Review" %>
+<% end %>
+
+<form class="" action="/users/:id/reviews" method="post">
+
+</form>

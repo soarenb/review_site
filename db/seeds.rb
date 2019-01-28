@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Review.create(rating: "5", title: "Nasty Roman Tattoo", description: "Took 8 hours but was totes worth it!!!") 

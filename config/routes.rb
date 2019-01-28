@@ -1,5 +1,19 @@
 Rails.application.routes.draw do
-  root 'homes#index'
+  root 'homepages#index'
+  # root 'reviews#index'
   devise_for :users
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  resources :homepages do
+      resources :profiles
+  end
+
+
+
+# namespace 'api' do
+#   namespace 'v1' do
+#     resources :reviews, only: [:new, :create, :index]
+        # creates routes for the new, create and index actions of the API controller for react to fetch from
+#   end
+# end
+
 end
