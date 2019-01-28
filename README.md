@@ -2,9 +2,7 @@
 
 # README
 
-This site will have articles on prominent conspiracy 
-theories and allow users to rate their truthfulness
-and discuss (review) the conspiracy in the comments.
+This is a review site.
 
 Things you may want to cover:
 
