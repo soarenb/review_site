@@ -9,7 +9,7 @@
     "react-dom": "~15.4.2",
     "redbox-react": "1.6.0"
   },
-    "engines": {
+  "engines": {
     "node": ">=6.0.0",
     "yarn": ">=0.25.2"
   },

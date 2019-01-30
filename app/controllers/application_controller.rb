@@ -6,6 +6,6 @@ class ApplicationController < ActionController::Base
   protected
 
   def configure_permitted_parameters #this is where you pass in variables from the user class to devise
-    devise_parameter_sanitizer.permit(:sign_up)
+    devise_parameter_sanitizer.permit(:sign_up) { |u| u.permit(:name, :email, :password, :password_confirmation)}
   end
 end

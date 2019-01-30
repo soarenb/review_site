@@ -1,0 +1,10 @@
+<% @reviews.each do |review| %>
+    <li>
+      User Rating: <%= review.rating %>
+      User Review: <%= review.title %>
+      User Review: <%= review.description %>
+    </li>
+  <% end %>
+  <br>
+  <%= link_to 'Add a Review', new_artist_review_path(@artist) %>
+  
