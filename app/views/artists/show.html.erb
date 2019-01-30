@@ -1,0 +1,19 @@
+<h2>Artist Show Page</h2>
+<ul>
+    <li>
+      <b><%= @artist.name %></b>
+      <b><%= @artist.parlor_name %></b>
+    </li>
+</ul>
+
+<% @reviews.each do |review| %>
+  <li>
+    User Rating: <%= review.rating %>
+    User Review: <%= review.title %>
+    User Review: <%= review.description %>
+  </li>
+<% end %>
+<br>
+
+
+<%= link_to "Add a Review", new_artist_review_path(@artist) %>

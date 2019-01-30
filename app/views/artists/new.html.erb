@@ -1,0 +1,19 @@
+<h1>Creation form for Artist</h1>
+
+<%= form_for (@artist) do |f| %>
+  <div class="field">
+    <%=f.label :name, "Name of Tattoo Artist:" %>
+    <%=f.text_field :name %>
+  </div>
+
+  <div class="field">
+  <%=f.label :parlor_name, "Name of their tattoo parlor:" %>
+  <%=f.text_field :parlor_name %>
+</div>
+
+  <%=f.submit "Add Artist" %>
+<% end %>
+
+<form class="" action="/artists/:id/reviews" method="post">
+
+</form>

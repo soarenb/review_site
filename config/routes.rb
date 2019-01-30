@@ -1,18 +1,16 @@
 Rails.application.routes.draw do
-  root 'homepages#index'
-  # root 'reviews#index'
+  root 'artists#new'
   devise_for :users
 
-  resources :homepages do
-      resources :profiles
-  end
+resources :artists do
+  resources :reviews
+end
 
-
-
+#may need this API call later
 # namespace 'api' do
 #   namespace 'v1' do
 #     resources :reviews, only: [:new, :create, :index]
-        # creates routes for the new, create and index actions of the API controller for react to fetch from
+#         #creates routes for the new, create and index actions of the API controller for react to fetch from
 #   end
 # end
 

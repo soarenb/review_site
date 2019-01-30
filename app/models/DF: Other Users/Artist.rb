@@ -1,2 +1,0 @@
-class Artist < User
-end
